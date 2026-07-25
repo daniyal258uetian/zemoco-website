@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Zemoco Limited</title>
+<meta name="description" content="Request a delivery quote from Zemoco Limited across Greater London.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav-row">
+    <a class="brand" href="../">ZEMOCO <span class="badge">LTD</span></a>
+    <nav class="links" aria-label="Primary">
+      <a href="../">Home</a>
+      <a href="../services/">Services</a>
+      <a href="../coverage/">Coverage</a>
+      <a href="../fleet/">Fleet</a>
+      <a href="../compliance/">Compliance</a>
+      <a href="../contact/" class="active">Contact</a>
+    </nav>
+    <div class="call-strip">
+      <a class="tel" href="tel:+447909074261">07909 074261</a>
+      <a class="btn" href="../contact/">Get a quote</a>
+      <button class="menu-toggle" aria-label="Open menu" onclick="document.getElementById('mobile-nav').classList.toggle('open')">&#9776;</button>
+    </div>
+  </div>
+  <div id="mobile-nav" class="wrap" style="padding-bottom:14px;">
+    <nav style="display:flex;flex-direction:column;gap:12px;font-size:15px;">
+      <a href="../" onclick="document.getElementById('mobile-nav').classList.remove('open')">Home</a>
+      <a href="../services/" onclick="document.getElementById('mobile-nav').classList.remove('open')">Services</a>
+      <a href="../coverage/" onclick="document.getElementById('mobile-nav').classList.remove('open')">Coverage</a>
+      <a href="../fleet/" onclick="document.getElementById('mobile-nav').classList.remove('open')">Fleet</a>
+      <a href="../compliance/" onclick="document.getElementById('mobile-nav').classList.remove('open')">Compliance</a>
+      <a href="../contact/" class="active" onclick="document.getElementById('mobile-nav').classList.remove('open')">Contact</a>
+      <a href="tel:+447909074261">Call 07909 074261</a>
+    </nav>
+  </div>
+</header>
+<main>
+<div class="page-banner">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="../">Home</a> / Contact</div>
+    <div class="eyebrow">Contact us</div>
+    <h1>Need something delivered?</h1>
+    <p>We're here to help with all your delivery and logistics needs. Fill in the form or reach us directly, we'll get back to you with a quote.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap coverage-wrap" style="align-items:start;">
+    <div class="quote-form">
+      <h2 style="font-size:20px;font-weight:600;margin-bottom:20px;">Request a quote</h2>
+      <form id="quote-form">
+        <div class="row-2">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="company">Company (optional)</label>
+            <input type="text" id="company" name="company">
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label for="service">Service needed</label>
+            <select id="service" name="service">
+              <option>Last-mile delivery</option>
+              <option>Courier service (same-day)</option>
+              <option>Courier service (scheduled)</option>
+              <option>Fleet management</option>
+              <option>Other / not sure</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="postcode">Pickup postcode</label>
+            <input type="text" id="postcode" name="postcode" placeholder="e.g. EC1">
+          </div>
+        </div>
+        <div class="field">
+          <label for="details">Delivery details</label>
+          <textarea id="details" name="details" rows="4" placeholder="What needs moving, where to, and when?"></textarea>
+        </div>
+        <button type="submit" class="btn submit">Send request</button>
+        <p class="form-note">This opens an email to zemoco360@gmail.com with your details filled in, ready to send.</p>
+      </form>
+    </div>
+
+    <div>
+      <div class="contact-card" style="background:#fff;border-color:var(--line);color:var(--ink);">
+        <div class="contact-line" style="border-color:var(--line);">
+          <span class="label" style="color:var(--muted);">Phone</span>
+          <a href="tel:+447909074261">07909 074261</a>
+        </div>
+        <div class="contact-line" style="border-color:var(--line);">
+          <span class="label" style="color:var(--muted);">Email</span>
+          <a href="mailto:zemoco360@gmail.com">zemoco360@gmail.com</a>
+        </div>
+        <div class="contact-line" style="border-color:var(--line);">
+          <span class="label" style="color:var(--muted);">Coverage</span>
+          <span>Greater London</span>
+        </div>
+      </div>
+      <div class="insurance-note" style="margin-top:20px;">
+        <span class="tag">Good to know</span>
+        <p>Insurance documentation and compliance details are available on request, just ask when you get in touch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap footer-row">
+    <span>&copy; <span class="year"></span> Zemoco Limited. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="../services/">Services</a>
+      <a href="../coverage/">Coverage</a>
+      <a href="../fleet/">Fleet</a>
+      <a href="../compliance/">Compliance</a>
+      <a href="../contact/">Contact</a>
+    </div>
+    <span class="mono">SW1 &middot; EC1 &middot; N1 &middot; E14 &middot; W1 &middot; SE1</span>
+  </div>
+</footer>
+<script src="../main.js"></script>
+</body>
+</html>

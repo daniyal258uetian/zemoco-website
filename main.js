@@ -9,6 +9,26 @@
     });
   }
 
+  var roadSection = document.querySelector('.road-section');
+  if (roadSection) {
+    if ('IntersectionObserver' in window) {
+      var roadObserver = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-inview');
+              roadObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.22 }
+      );
+      roadObserver.observe(roadSection);
+    } else {
+      roadSection.classList.add('is-inview');
+    }
+  }
+
   var qf = document.getElementById('quote-form');
   if (qf) {
     qf.addEventListener('submit', function (e) {
@@ -35,7 +55,7 @@
       ].filter(Boolean).join('\n');
 
       window.location.href =
-        'mailto:zemoco360@gmail.com?subject=' +
+        'mailto:contact@zemoco.co.uk?subject=' +
         encodeURIComponent(subject) +
         '&body=' +
         encodeURIComponent(bodyLines);
